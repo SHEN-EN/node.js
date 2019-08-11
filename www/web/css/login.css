@@ -1,0 +1,150 @@
+
+.content {
+    position: relative;
+    width: 1200px;
+    height: 600px;
+    margin: 0 auto;
+    top: 50px;
+}
+.top{
+    position: relative;
+    z-index: 100;
+}
+.bottom{
+    position: relative;
+    width: 1200px;
+    height: 560px;
+    margin: 0 auto;
+    border: 1px solid #bcbcbc;
+    box-sizing: border-box;
+    border-radius: 15px;
+    top: -15px;
+    box-shadow: 0px 10px 5px #888888;
+}
+.bottom>.bottomContent{
+    position: relative;
+    width: 650px;
+    height: 400px;
+    margin: 0 auto;
+    top: 60px;
+}
+.bottom>.bottomContent>.contentTop span{
+    display: inline-block;
+    width: 50%;
+    height: 40px;
+    border-bottom: 1px solid #0a9ce7;
+    position: relative;
+    line-height: 40px;
+    text-align: center;
+}
+.bottom>.bottomContent>.contentTop span:first-child{
+    margin-right: -6px;
+}
+.bottom>.bottomContent>#phone{
+    width: 100%;
+    height: 40px;
+    text-indent: 12px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.bottom>.bottomContent>#password{
+    width: 100%;
+    height: 40px;
+    text-indent: 12px;
+    margin-bottom: 30px;
+}
+.bottom>.bottomContent>.file span{
+    font-size: 13px;
+    margin-right: 20px;
+}
+.bottom>.bottomContent>.register{
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 40px;
+    background: #ff861e;
+    margin-top: 30px;
+}
+.bottom>.bottomContent>.verification{
+    margin-top: 40px;
+}
+.bottom>.bottomContent>.verification>.phone{
+    display: inline-block;
+    width: 252px;
+    height: 40px;
+    border: 1px solid #888888;
+}
+.bottom>.bottomContent>.verification>.phone>#phoneVerification{
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    border: 0;
+    text-indent: 12px;
+    outline: none;
+}
+.bottom>.bottomContent>.verification>.phone img:first-of-type{
+    position: absolute;
+    display: inline-block;
+    width: 90px;
+    height: 30px;
+    margin-top: 6px;
+    margin-left: 110px;
+}
+.bottom>.bottomContent>.verification>.phone img:last-child{
+    position: absolute;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin-top: 7px;
+    margin-left: 220px;
+}
+.bottom>.bottomContent>.verification>.message{
+    position: relative;
+    display: inline-block;
+    width: 252px;
+    height: 40px;
+    border: 1px solid #888888;
+    left: 80px;
+}
+.bottom>.bottomContent>.verification>.message>#messageVerification{
+    display: inline-block;
+    position: absolute;
+    width: 145px;
+    height: 40px;
+    border: 0;
+    text-indent: 12px;
+    outline: none;
+}
+.bottom>.bottomContent>.verification>.message div{
+    display: inline-block;
+    position: absolute;
+    width: 107px;
+    height: 40.2px;
+    background: #0a9ce7;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 145px;
+    top: -.1px;
+}
+.bottom>.bottomContent>.agreement{
+    margin-top: 20px;
+    font-size: 13px;
+    color: #808080;
+}
+.bottom>.bottomContent>.agreement img{
+    top: 4px;
+    display: inline-block;
+    position: relative;
+}
+.bottom>.bottomContent>.agreement span{
+    color: #0a9ce7;
+}
+
+
+
+
+
+

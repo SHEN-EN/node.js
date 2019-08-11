@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <style>
+        .bb{
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border: #000 1px solid;
+        }
+    </style>
+</head>
+<body>
+        <input type="text" name="user" id="user">
+        <br>
+        <input type="password" name="pas">
+        <input type="submit" id="aaa">
+        <input type="submit" id="bbb">
+        <div class="bb">
+            <ul id="ccc">
+
+            </ul>
+        </div>
+        <script>
+            // $('#aaa').click(function (e) { 
+            //     add() 
+            // });
+            $('#aaa').click(function (e) { 
+               $.ajax({
+                   type: "get",
+                   url: "http://10.3.13.32:8000/getTalk",
+                   dataType: "JSON",
+                   data:{
+
+},
+                   success: function (response) {
+                       console.log(response)
+                   }
+               });
+                
+            });
+            if (window.WebSocket) {
+                var ws=new WebSocket('ws://10.3.13.32:8001')
+                ws.onopen = function(e){
+                console.log("连接服务器成功");
+                $('#bbb').click(function (e) { 
+                    ws.send($('#user').val());
+                });
+                }
+                ws.onmessage=(e)=>{
+                    add(e.data)
+                }
+            }
+            function add(e){
+                let a=`<li>${e}</li>`
+                $('#ccc').append(a)
+            }
+        </script>
+</body>
+</html>

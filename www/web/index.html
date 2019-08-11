@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content=" ">
+    <title>Document</title>
+    <style type="text/css">
+        *{margin: 0;padding: 0;}
+        a{text-decoration: none;}
+        ul,li{list-style: none;}
+        body{font-size: 14px;font-family: "微软雅黑";}
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href=""><img src="images/logo.png" alt=""></a>
+        </div>
+        <ul class="navigation" id="navlist">
+            <!--切换注释来实现导航栏的变化-->
+            <!--  <li><a href="">首页</a></li>
+                <li><a href="">找工作</a></li>
+                <li><a href="">校园招聘</a></li>  -->
+            <!--  <li><a href="">首页</a></li>
+               <li><a href="">企业中心</a></li>
+               <li><a href="">发布职位</a></li>
+               <li><a href="">搜索简历</a></li>
+               <li><a href="">职位管理</a></li>
+               <li><a href="">简历管理</a></li>
+               <li><a href="">企业信息</a></li>
+               <li><a href="">校园招聘</a> </li>  -->
+            <!--  <li><a href="">首页</a></li>
+               <li><a href="">我的易工作</a></li>
+               <li><a href="">找工作</a></li>
+               <li><a href="">我的投递</a></li>
+               <li><a href="">我的收藏</a></li>
+               <li><a href="">个人简历</a></li>
+               <li><a href="">校园招聘</a></li>   -->
+        </ul>
+        <div class="unlogin" id="unlogin">
+            <a href="">注册</a>
+            <a href="">登录</a>
+        </div>
+        <div class="login" id="login">
+            <div class="userInfo">
+                <div class="username">
+                    用户名 : <span id="headUesrName">1297063036</span>
+                </div>
+                <div class="setAndOut">
+                    <a href="">账号设置</a>/
+                    <a href="">退出登录</a>
+                </div>
+            </div>
+            <div class="headPic"></div>
+        </div>
+    </div>
+</header>
+
+<section class="main">
+    <section class="top">
+        <div class="banner">
+			<div class="bannerContent" id="bannerContent">
+				<div class="bannerList" >
+					<ul id="bannerList">
+						<li><a href="img.html?img=1"><img class="banner_img" src="images/banner.png"></a></li>
+						<li><a href="img.html?img=2"><img class="banner_img" src="images/banner1.png"></a></li>
+						<li><a href="img.html?img=3"><img class="banner_img" src="images/banner2.png"></a></li>
+					</ul>
+					<div class="bannerBtnL" id="bannerBtnL"></div>
+					<div class="bannerBtnR" id="bannerBtnR"></div>
+					<ul id="points">
+						<span index="1" class="on"></span>
+						<span index="2"></span>
+						<span index="3"></span>
+					</ul>
+				</div>
+			</div>
+        </div>
+        <div class="login">
+            <div class="container" id="loginContainer">
+                <ul class="title">
+                    <li class="personal" id="personalLogin"><a href="#">个人用户</a></li>
+                    <li class="corporate" id="corporateLogin"><a href="#">企业用户</a></li>
+                </ul>
+                <div class="personContent" id="personContent">
+                    <p>一大波offer正在袭来你还在等什么？</p>
+                    <input class="username" id="personId" placeholder="输入手机号码/邮箱">
+                    <input class="password" id="personPwd" placeholder="输入密码">
+                    <div class="forget">忘记密码？</div>
+                    <button class="enter" id="personEnter">登录</button>
+                    <div class="register">还没有账号？<a href="#">立即注册</a></div>
+                    <div class="line"></div>
+                </div>
+                <div class="companyContent" id="companyContent">
+                    <p>寻找千里马</p>
+                    <input class="username" id="companyId" placeholder="输入用户名">
+                    <input class="password" id="companyPwd" placeholder="请输入密码">
+                    <div class="code"><input  placeholder="请输入验证码"></div>
+                    <button class="enter" id="companyEnter">登录</button>
+                    <div class="register">还没有账号？<a href="#">立即注册</a></div>
+                    <div class="forget">忘记密码？</div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <div class="userContainer" id="userContainer">
+                <div class="mainUserInfo">
+                    <div class="userInfoImg"></div>
+                    <div class="mainUserName" id="mainUserName">1297063036</div>
+                </div>
+                <div class="userContent">
+                    <div class="userInformation">
+                        <div class="userInformation_classify">
+                            <div class="classify_icon"></div>
+                            <div class="classify_font">职业测评</div>
+                        </div>
+                        <div class="userInformation_classify">
+                            <div class="classify_icon icon_resume"></div>
+                            <div class="classify_font">我的简历</div>
+                        </div>
+                    </div>
+                    <div class="userInformation">
+                        <div class="userInformation_classify">
+                            <div class="classify_icon icon_delivery"></div>
+                            <div class="classify_font">我的投递</div>
+                        </div>
+                        <div class="userInformation_classify">
+                            <div class="classify_icon icon_AccountSettings"></div>
+                            <div class="classify_font">账号设置</div>
+                        </div>
+                    </div>
+                    <div class="loginout" id="loginout">退出登录</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="middle">
+        <div class="middleContainer">
+                <div class="Statistics" id="Statistics">
+                    <p>在线职位统计</p>
+                    <ul>
+                        <li>
+                            <img src="images/Statistics/0.png" height="45px" width="30px">
+                            <img src="images/Statistics/1.png" height="45px" width="30px">
+                        </li>
+                        <li>
+                            <img src="images/Statistics/0.png" height="45px" width="30px">
+                            <img src="images/Statistics/1.png" height="45px" width="30px">
+                        </li>
+                        <li>
+                            <img src="images/Statistics/0.png" height="45px" width="30px">
+                            <img src="images/Statistics/1.png" height="45px" width="30px">
+                        </li>
+                        <li>
+                            <img src="images/Statistics/0.png" height="45px" width="30px">
+                            <img src="images/Statistics/1.png" height="45px" width="30px">
+                        </li>
+                        <li>
+                            <img src="images/Statistics/0.png" height="45px" width="30px">
+                            <img src="images/Statistics/1.png" height="45px" width="30px">
+                        </li>
+                        <li>
+                            <img src="images/Statistics/0.png" height="45px" width="30px">
+                            <img src="images/Statistics/1.png" height="45px" width="30px">
+                        </li>
+                        <p>个</p>
+                    </ul>
+                </div>
+                <div class="middleSearch">
+                    <input id="searchInput" type="text" placeholder="输入职位或公司名称">
+                    <button>搜索</button>
+                    <ul>
+                        <p>热门搜索&nbsp;: </p>
+                        <li>金融</li>
+                        <li>行政</li>
+                        <li>销售</li>
+                        <li>IT产品</li>
+                    </ul>
+                </div>
+        </div>
+    </section>
+
+    <section class="bottom">
+        <div class="box">
+            <div class="left"></div>
+            <div class="right" id="right">
+                
+            </div>
+        </div>
+         <div class="box">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+    </section>
+</section>
+
+<footer>
+    <div class="container"></div>
+</footer>
+    <script src="js/jq.js"></script>
+	<script type="text/javascript" src="js/moveTime.js"></script>
+    <script type="text/javascript" src="js/tween.js"></script>
+	<script type="text/javascript" src="js/getArr.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+
+</body>
+</html>

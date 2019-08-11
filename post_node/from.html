@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+    <form>
+        用户名:<input type="text" name="user">
+        <br>
+        密码:<input type="password" name="pas" id="">
+        <br>
+        <button id="btn">按钮</button>
+    </form>
+    <script>
+        $('#btn').click(function () { 
+            $.ajax({
+                type: "POST",
+                url: "http://127.0.0.1:5000",
+                data: {
+                    'name':$('input[name="user"]').val(),
+                    'pas':$('input[name="pas"]').val()
+                },
+                dataType: "JSON",
+                success: function (response) {
+                    
+                }
+            });
+        });
+    </script>
+</body>
+</html>

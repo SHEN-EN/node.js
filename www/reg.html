@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+        <input type="text" name="user">
+        <br>
+        <input type="password" name="pas">
+        <input type="submit" id="aaa">
+        <input type="submit" id="bbb">
+        <script>
+            $('#aaa').click(function (e) { 
+               $.ajax({
+                   type: "GET",
+                   url: "http://127.0.0.1:5000/user",
+                   data: {
+                       'user':$('input[name="user"]').val(),
+                       'pas':$('input[name="pas"]').val(),
+                       'reg':true
+                   },
+                   dataType: "JSON",
+                   success: function (response) {
+                       
+                   }
+               });
+                
+            });
+            $('#bbb').click(function (e) { 
+               $.ajax({
+                   type: "post",
+                   url: "http://127.0.0.1:5000/user",
+                   data: {
+                       'user':$('input[name="user"]').val(),
+                       'pas':$('input[name="pas"]').val(),
+                       'reg':false
+                   },
+                   dataType: "JSON",
+                   success: function (response) {
+                       
+                   }
+               });
+                
+            });
+        </script>
+</body>
+</html>

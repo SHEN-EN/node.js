@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+    <form  method="GET">
+        <input type="text" name="user">
+        <br>
+        <input type="password" name="pas">
+        <input type="submit" id="aaa">
+    </form>
+    <script>
+        $('#aaa').click(function (e) { 
+            $.ajax({
+                type: "Get",
+                url: "http://127.0.0.1:5000",
+                data: {
+                    'name':$('input[name="user"]').val(),
+                    'pas':$('input[name="pas"]').val()
+                },
+                dataType: "JSON",
+                success: function (response) {
+                    
+                }
+            });
+            
+        });
+    </script>
+</body>
+</html>

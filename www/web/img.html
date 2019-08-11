@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content=" ">
+    <title>Document</title>
+    <style type="text/css">
+        *{margin: 0;padding: 0;}
+        a{text-decoration: none;}
+        ul,li{list-style: none;}
+        body{font-size: 14px;font-family: "微软雅黑";}
+        #img{
+            position: relative;
+            width: 860px;
+            height: 400px;
+            margin: 0 auto;
+        }
+        #img img{
+            width: 860px;
+            height: 400px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="img">
+        <img src="images/banner.png" >
+    </div>
+
+</body>
+
+<script>
+    var img = document.getElementById("img").getElementsByTagName("img")[0];
+
+    function GetUrlParam(paraName) {
+　　　　var url = document.location.toString();
+　　　　var arrObj = url.split("?");
+
+　　　　if (arrObj.length > 1) {
+　　　　　　var arrPara = arrObj[1].split("&");
+　　　　　　var arr;
+
+　　　　　　for (var i = 0; i < arrPara.length; i++) {
+　　　　　　　　arr = arrPara[i].split("=");
+
+　　　　　　　　if (arr != null && arr[0] == paraName) {
+　　　　　　　　　　return arr[1];
+　　　　　　　　}
+　　　　　　}
+　　　　　　return "";
+　　　　}
+　　　　else {
+　　　　　　return "";
+　　　　}
+　　}
+    var imgNumber = GetUrlParam("img")-1;
+    if(imgNumber == 0){
+        imgNumber="";
+    }
+    img.src = "images/banner"+imgNumber+".png";
+
+</script>
+
+</html>
